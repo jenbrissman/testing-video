@@ -1,0 +1,23 @@
+{
+  "name": "testing-video",
+  "version": "1.0.0",
+  "description": "",
+  "main": "upload.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jenbrissman/testing-video.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jenbrissman/testing-video/issues"
+  },
+  "homepage": "https://github.com/jenbrissman/testing-video#readme",
+  "dependencies": {
+    "cloudinary": "^1.28.1",
+    "dotenv": "^16.0.0"
+  }
+}
