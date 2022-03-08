@@ -1,54 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="../../assets/favicon.png" type="image/png" />
     <title>Video Testing - Upload with Eager</title>
 
+    <link
+      href="https://unpkg.com/cloudinary-video-player@1.5.1/dist/cld-video-player.min.css"
+      rel="stylesheet"
+    />
 
-    <link href='https://unpkg.com/cloudinary-video-player@1.5.1/dist/cld-video-player.min.css' rel='stylesheet'>
+    <script
+      src="https://unpkg.com/cloudinary-core@latest/cloudinary-core-shrinkwrap.min.js"
+      type="text/javascript"
+    ></script>
 
-	<script src='https://unpkg.com/cloudinary-core@latest/cloudinary-core-shrinkwrap.min.js' type='text/javascript'>
-
-	</script>
-
-	<script src='https://unpkg.com/cloudinary-video-player@1.5.1/dist/cld-video-player.min.js' type='text/javascript'>
-
-	</script>
-
-    <style>
-         .container {
-        display: flex;
-        align-items: flex-start;
-        margin: 2rem;
-      }
-      .container div {
-        max-width: 500px;
-        margin: 1rem;
-      }
-    </style>
-</head>
-<body>
+    <script
+      src="https://unpkg.com/cloudinary-video-player@1.5.1/dist/cld-video-player.min.js"
+      type="text/javascript"
+    ></script>
+  </head>
+  <body>
     <h1>Video Testing</h1>
-      <div id="video1">
-        <h2>Eager</h2>
-        <!-- <video
+    <h2>Eager</h2>
+    <video
           width="100%"
           controls
-          src="https://res.cloudinary.com/jen-brissman/video/upload/f_auto,q_auto/Upload_Presets_Tutorial_qicpyo.mp4"
+          class="cld-video-player cld-fluid"
+          poster="https://res.cloudinary.com/jen-brissman/video/upload/bo_7px_solid_black,c_limit,h_500,w_800/so_5/v1/Upload_Presets_Tutorial_qicpyo.jpg"
         >
-        </video> -->
-      <div>
-        <video id="player" controls class="cld-video-player cld-fluid">
-            poster="https://res.cloudinary.com/jen-brissman/video/upload/bo_7px_solid_black,c_limit,h_500,w_800/so_5/v1/Upload_Presets_Tutorial_qicpyo.jpg"
         </video>
-      </div>
-     
-    </div>
-    <script src="script.js">
+    <div>
+      <!-- <video
+        id="player"
+        controls
+        class="cld-video-player cld-fluid"
+        poster="https://res.cloudinary.com/jen-brissman/video/upload/bo_7px_solid_black,c_limit,h_500,w_800/so_5/v1/Upload_Presets_Tutorial_qicpyo.jpg"
 
-	</script>
-</body>
+      ></video> -->
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
